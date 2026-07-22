@@ -354,3 +354,7 @@ background:#d50000;
 width:220px;
 height:42px;
 }
+.bottom-nav a.active{
+color:#d50000;
+font-weight:bold;
+}
