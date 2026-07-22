@@ -350,3 +350,7 @@ justify-content:space-between;
 align-items:center;
 background:#d50000;
 }
+.search-box{
+width:220px;
+height:42px;
+}
