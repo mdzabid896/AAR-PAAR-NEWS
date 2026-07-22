@@ -129,3 +129,9 @@ const footer = document.querySelector("footer p:last-child");
 if(footer){
 footer.innerHTML="© "+year+" AAR-PAAR NEWS. All Rights Reserved.";
 }
+const menuBtn = document.querySelector(".menu-btn");
+const navbar = document.querySelector(".navbar");
+
+menuBtn.addEventListener("click", function () {
+    navbar.classList.toggle("active");
+});
