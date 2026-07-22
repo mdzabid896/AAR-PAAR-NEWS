@@ -1,89 +1,4 @@
 <!DOCTYPE html>
-<html lang="hi">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AAR-PAAR-NEWS</title>
-
-<style>
-body{
-margin:0;
-font-family:Arial,sans-serif;
-background:#f5f5f5;
-}
-
-header{
-background:#d50000;
-color:white;
-padding:20px;
-text-align:center;
-font-size:30px;
-font-weight:bold;
-}
-
-nav{
-background:#222;
-padding:10px;
-text-align:center;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-margin:15px;
-font-size:18px;
-}
-
-.news{
-background:white;
-margin:20px;
-padding:20px;
-border-radius:10px;
-box-shadow:0 0 10px rgba(0,0,0,0.2);
-}
-
-footer{
-background:#222;
-color:white;
-text-align:center;
-padding:15px;
-margin-top:30px;
-}
-</style>
-
-</head>
-
-<body>
-
-<header>
-AAR-PAAR-NEWS
-</header>
-
-<nav>
-<a href="#">Home</a>
-<a href="#">India</a>
-<a href="#">World</a>
-<a href="#">Sports</a>
-<a href="#">Technology</a>
-</nav>
-
-<div class="news">
-<h2>Breaking News</h2>
-<p>Yahan par apni news likhen.</p>
-</div>
-
-<div class="news">
-<h2>Latest Update</h2>
-<p>Yahan par doosri news likhen.</p>
-</div>
-
-<footer>
-© 2026 AAR-PAAR-NEWS | All Rights Reserved
-</footer>
-
-</body>
-</html>
-<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -91,19 +6,44 @@ AAR-PAAR-NEWS
 <title>AAR-PAAR NEWS</title>
 
 <link rel="stylesheet" href="style.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 
 <body>
 
-<header>
+<header class="header">
 
 <div class="logo">
-<h1>AAR-PAAR NEWS</h1>
+
+<i class="fa-solid fa-newspaper"></i>
+
+<span>AAR-PAAR NEWS</span>
+
 </div>
 
-<nav>
+<div class="search-box">
+
+<input type="text" placeholder="Search News...">
+
+<button>
+
+<i class="fa-solid fa-magnifying-glass"></i>
+
+</button>
+
+</div>
+
+<div class="menu-btn">
+
+<i class="fa-solid fa-bars"></i>
+
+</div>
+
+</header>
+
+<nav class="navbar">
 
 <ul>
 
@@ -121,27 +61,23 @@ AAR-PAAR-NEWS
 
 <li><a href="#">Entertainment</a></li>
 
+<li><a href="#">Business</a></li>
+
+<li><a href="#">Education</a></li>
+
+<li><a href="#">Health</a></li>
+
 <li><a href="#">Contact</a></li>
 
 </ul>
 
 </nav>
 
-<div class="search-box">
-
-<input type="text" placeholder="Search News...">
-
-<button>Search</button>
-
-</div>
-
-</header>
-
-<section class="breaking">
+<section class="breaking-news">
 
 <marquee>
 
-🔥 Breaking News : Welcome To AAR-PAAR NEWS | Latest News Updated Every Day |
+🔥 Breaking News • Welcome To AAR-PAAR NEWS • Latest News Updated Every Minute • Stay Connected •
 
 </marquee>
 
@@ -149,59 +85,160 @@ AAR-PAAR-NEWS
 
 <section class="hero">
 
-<h2>Latest Breaking News</h2>
+<div class="hero-text">
 
-<p>Read India's fastest news updates.</p>
+<h1>Fast • Trusted • Latest News</h1>
+
+<p>
+
+Read Breaking News From India & Around The World.
+
+</p>
+
+<a href="#" class="btn">
+
+Read Latest News
+
+</a>
+
+</div>
 
 </section>
 
-<section class="news">
+<section class="section-title">
 
-<div class="card">
+<h2>Latest News</h2>
 
-<img src="https://picsum.photos/400/250?1">
+</section>
+
+<section class="news-container">
+
+<div class="news-card">
+
+<img src="https://picsum.photos/500/300?1">
+
+<div class="news-content">
+
+<h3>Breaking News Title</h3>
+
+<p>
+
+Write your latest news here.
+
+</p>
+
+<a href="#">Read More</a>
+
+</div>
+
+</div>
+
+<div class="news-card">
+
+<img src="https://picsum.photos/500/300?2">
+
+<div class="news-content">
 
 <h3>India News</h3>
 
-<p>Write your India news here.</p>
+<p>
 
-<button>Read More</button>
+Write India news here.
+
+</p>
+
+<a href="#">Read More</a>
 
 </div>
 
-<div class="card">
+</div>
 
-<img src="https://picsum.photos/400/250?2">
+<div class="news-card">
+
+<img src="https://picsum.photos/500/300?3">
+
+<div class="news-content">
 
 <h3>World News</h3>
 
-<p>Write your World news here.</p>
+<p>
 
-<button>Read More</button>
+Write World news here.
+
+</p>
+
+<a href="#">Read More</a>
 
 </div>
 
-<div class="card">
+</div>
+<div class="news-card">
 
-<img src="https://picsum.photos/400/250?3">
+<img src="https://picsum.photos/500/300?4">
+
+<div class="news-content">
+
+<h3>Technology News</h3>
+
+<p>Latest technology updates and AI news.</p>
+
+<a href="#">Read More</a>
+
+</div>
+
+</div>
+
+<div class="news-card">
+
+<img src="https://picsum.photos/500/300?5">
+
+<div class="news-content">
 
 <h3>Sports News</h3>
 
-<p>Write your Sports news here.</p>
+<p>Live cricket, football and sports updates.</p>
 
-<button>Read More</button>
+<a href="#">Read More</a>
 
 </div>
 
-<div class="card">
+</div>
 
-<img src="https://picsum.photos/400/250?4">
+<div class="news-card">
 
-<h3>Technology</h3>
+<img src="https://picsum.photos/500/300?6">
 
-<p>Write your Technology news here.</p>
+<div class="news-content">
 
-<button>Read More</button>
+<h3>Entertainment</h3>
+
+<p>Movies, web series and celebrity updates.</p>
+
+<a href="#">Read More</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="categories">
+
+<h2>Popular Categories</h2>
+
+<div class="category-grid">
+
+<div class="cat-box">🇮🇳 India</div>
+
+<div class="cat-box">🌍 World</div>
+
+<div class="cat-box">🏏 Sports</div>
+
+<div class="cat-box">💻 Technology</div>
+
+<div class="cat-box">🎬 Entertainment</div>
+
+<div class="cat-box">💼 Business</div>
 
 </div>
 
@@ -209,13 +246,46 @@ AAR-PAAR-NEWS
 
 <footer>
 
-<h3>AAR-PAAR NEWS</h3>
+<div class="footer-content">
 
-<p>© 2026 All Rights Reserved.</p>
+<h2>AAR-PAAR NEWS</h2>
+
+<p>Fast | Trusted | Latest News</p>
+
+<div class="social">
+
+<a href="#"><i class="fab fa-facebook"></i></a>
+
+<a href="#"><i class="fab fa-instagram"></i></a>
+
+<a href="#"><i class="fab fa-youtube"></i></a>
+
+<a href="#"><i class="fab fa-x-twitter"></i></a>
+
+</div>
+
+<p>© 2026 AAR-PAAR NEWS. All Rights Reserved.</p>
+
+</div>
 
 </footer>
+
+<div class="bottom-nav">
+
+<a href="#"><i class="fa-solid fa-house"></i><span>Home</span></a>
+
+<a href="#"><i class="fa-solid fa-layer-group"></i><span>Category</span></a>
+
+<a href="#"><i class="fa-solid fa-magnifying-glass"></i><span>Search</span></a>
+
+<a href="#"><i class="fa-regular fa-bookmark"></i><span>Saved</span></a>
+
+<a href="#"><i class="fa-solid fa-gear"></i><span>Settings</span></a>
+
+</div>
 
 <script src="script.js"></script>
 
 </body>
+
 </html>
